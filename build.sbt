@@ -9,11 +9,10 @@ lazy val basicSettings = Seq(
   organizationHomepage    :=  Some(new URL("http://www.company.com")),
   description             :=  "Example project for Scala",
   startYear               :=  Some(2016),
-  scalaVersion            :=  "2.11.9",
-  addCompilerPlugin("com.milessabin" % "si2712fix-plugin_2.11.8" % "1.2.0"),
+  scalaVersion            :=  "2.12.7",
   scalacOptions           :=  Seq(
+    "-Ypartial-unification",
     "-encoding", "utf8",
-    "-unchecked",
     "-feature",
     "-language:existentials",
     "-language:higherKinds",

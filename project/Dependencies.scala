@@ -20,6 +20,7 @@ object Dependencies {
     val hadoopClient                 = "org.apache.hadoop"           %  "hadoop-client"                    % Versions.hadoopVersion         % "provided"
     val yarnClient                   = "org.apache.hadoop"           % "hadoop-yarn-client"                % Versions.hadoopVersion         % "provided"
     val yarnServer                   = "org.apache.hadoop"           % "hadoop-yarn-server-nodemanager"    % Versions.hadoopVersion         % "provided"
+    val catsCore                     = "org.typelevel"               %% "cats-core" %                      "2.0.0-M4"
   }
 
   lazy val dependencies = Seq(
@@ -29,6 +30,7 @@ object Dependencies {
     Libraries.shapeless,
     Libraries.hadoopClient,
     Libraries.yarnClient,
-    Libraries.yarnServer
+    Libraries.yarnServer,
+    Libraries.catsCore
   )
 }
